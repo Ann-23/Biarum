@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  min-height: 70px;
+  background-color: @gray;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__menu-wrap {
+  display: none;
+}
+
+.header__link {
+  display: block;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 1em;
+  color: @white;
+  text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .header__menu-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+}

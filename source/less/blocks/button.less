@@ -1,0 +1,43 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.125em;
+  color: @white;
+  text-align: center;
+  background: @green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @green-d;
+  }
+
+  &:focus {
+    color: @gray-btn;
+    background-color: @white;
+    box-shadow: 0px 0px 10px @shadow;
+  }
+
+  &:active {
+    color: @white;
+    background-color: @green-vd;
+  }
+}
+
+.button--disabled {
+  color: @gray-lt;
+  background-color: @gray-l;
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    max-width: 203px;
+  }
+}
