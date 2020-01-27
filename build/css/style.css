@@ -347,27 +347,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
-  width: 280px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 620px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (min-width: 960px) {
-  .container {
-    width: 940px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
 .header {
   width: 100%;
   min-height: 70px;
