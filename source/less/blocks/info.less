@@ -1,0 +1,58 @@
+.info {
+  padding-top: 18%;
+  padding-bottom: 17.6%;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-image: url("../img/bg-info@mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.info__title {
+  margin: 0;
+  font-family: "TradeGothic", "Arial", sans-serif;
+  font-size: 3.25em;
+  font-weight: 700;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info__title-item {
+  color: @green;
+}
+
+.info__text {
+  font-size: 1.06em;
+  color: @white;
+  text-align: center;
+}
+
+.info__text--other {
+  color: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .info__title {
+    font-size: 6.25em;
+  }
+
+  .info__text {
+    font-size: 2.06em;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__title {
+    font-size: 3.25em;
+  }
+
+  .info__text:nth-of-type(2),
+  .info__text:nth-of-type(3) {
+    font-size: 1.25em;
+  }
+
+  .info__text {
+    font-size: 1.56em;
+  }
+}

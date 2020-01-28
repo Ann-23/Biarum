@@ -4,10 +4,10 @@
   margin: 0 auto;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
+  width: 100%;
   font-family: "MyriadPro", "Arial", sans-serif;
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 1.125em;
   color: @white;
   text-align: center;
   background: @green;
@@ -36,8 +36,17 @@
   background-color: @gray-l;
 }
 
+@media (min-width: @tablet-width) {
+  .button {
+    padding-top: 3.2%;
+    padding-bottom: 3.2%;
+    font-size: 2.375em;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .button {
+    font-size: 1.125em;
     max-width: 203px;
   }
 }

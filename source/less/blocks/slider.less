@@ -1,0 +1,83 @@
+.slider {
+  position: relative;
+}
+
+.slider__intro {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 81.33%;
+  max-width: 610px;
+}
+
+.slider__title {
+  font-family: "TradeGothic", "Arial", sans-serif;
+  font-size: 3.25em;
+  font-weight: 700;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider__title-item {
+  color: @green;
+}
+
+.slider__text {
+  font-size: 1.25em;
+  color: @white;
+  text-align: center;
+}
+
+.slider__remark {
+  padding-left: 7%;
+  padding-right: 7%;
+  font-family: "TradeGothic", "Arial", sans-serif;
+  font-size: 1.25em;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider__remark-item {
+  color: @green;
+}
+
+.slider__toggles {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__title {
+    font-size: 6.25em;
+  }
+
+  .slider__text {
+    font-size: 2.5em;
+  }
+
+  .slider__remark {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__title {
+    font-size: 5.125em;
+  }
+
+  .slider__text {
+    font-size: 1.56em;
+  }
+
+  .slider__remark {
+    font-size: 1.125em;
+  }
+}
