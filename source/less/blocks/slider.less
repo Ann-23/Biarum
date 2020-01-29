@@ -1,5 +1,7 @@
 .slider {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .slider__intro {
@@ -55,6 +57,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slider {
+    max-width: 1600px;
+  }
+
   .slider__title {
     font-size: 6.25em;
   }

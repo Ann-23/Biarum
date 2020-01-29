@@ -43,10 +43,15 @@
       </div>
       <div class="slider__wrapper">
         <div class="slider__slide" style="display: none;">
-          <img src="img/bg-top@mobile.png" alt="slide">
+          <picture>
+            <img src="img/bg-top@mobile.png" alt="slide">
+          </picture>
         </div>
         <div class="slider__slide">
-          <img src="img/bg-top@mobile.png" alt="slide">
+          <picture>
+            <source media="(min-width: 751px)" srcset="img/top-slide1@desktop.png">
+            <img src="img/bg-top@mobile.png" alt="slide">
+          </picture>
         </div>
         <div class="slider__slide" style="display: none;">
           <img src="img/bg-top@mobile.png" alt="slide">

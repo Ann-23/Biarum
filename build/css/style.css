@@ -483,6 +483,8 @@ input[type="radio"].visually-hidden {
 }
 .slider {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 .slider__intro {
   position: absolute;
@@ -541,6 +543,9 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 @media (min-width: 750px) {
+  .slider {
+    max-width: 1600px;
+  }
   .slider__title {
     font-size: 6.25em;
   }
