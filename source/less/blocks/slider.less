@@ -6,6 +6,7 @@
 
 .slider__intro {
   position: absolute;
+  top: 14.5%;
   left: 50%;
   transform: translate(-50%);
   width: 81.33%;
@@ -13,6 +14,7 @@
 }
 
 .slider__title {
+  margin: 0;
   font-family: "TradeGothic", "Arial", sans-serif;
   font-size: 3.25em;
   font-weight: 700;
@@ -26,12 +28,15 @@
 }
 
 .slider__text {
+  margin: 0;
+  padding-bottom: 5%;
   font-size: 1.25em;
   color: @white;
   text-align: center;
 }
 
 .slider__remark {
+  margin: 0;
   padding-left: 7%;
   padding-right: 7%;
   font-family: "TradeGothic", "Arial", sans-serif;
@@ -80,10 +85,26 @@
   }
 
   .slider__text {
+    padding-bottom: 1%;
     font-size: 1.56em;
   }
 
   .slider__remark {
     font-size: 1.125em;
   }
+
+  .slider__intro {
+    top: 4.5%;
+  }
+}
+
+@media (min-width: @post-desktop-width) {
+  .slider__intro {
+    top: 12.5%;
+  }
+
+  .slider__text {
+    padding-bottom: 5%;
+  }
+
 }

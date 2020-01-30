@@ -12,29 +12,52 @@
 }
 
 .input__control {
+  box-sizing: border-box;
+  padding: 3.2%;
   width: 100%;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 0.875em;
-  color: @gray-i;
-  border: 1px solid @blue-m;
+  border: 1px solid @gray-i;
+  border-radius: 3px;
+
+  &::placeholder {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 0.875em;
+    color: @gray-i;
+  }
 
   &:hover {
-    border: 1px solid @gray-for;
+    border: 1px solid @gray-lt;
+  }
+
+  &:hover::placeholder {
+    color: @gray-lt;
+  }
+
+  &:focus::placeholder {
+    color: @gray-lt;
   }
 
   &:focus {
     outline: none;
+    border: 1px solid @gray-for-f;
     box-shadow: 0px 0px 10px @shadow-g;
   }
 
-  &:active {
+  &:active::placeholder {
     color: @brown;
   }
 }
 
-.input__control--disabled {
-  color: @gray-lt;
+.input__control:disabled::placeholder {
+  color: @brown-d;
+}
+
+.input__control:disabled {
   background-color: @gray-l;
+  border: 1px solid @gray-for-f;
+}
+
+.input__control--email:disabled::placeholder {
+  color: @gray-for-d;
 }
 
 @media (min-width: @tablet-width) {
@@ -54,5 +77,22 @@
 
   .input__control {
     font-size: 1em;
+  }
+}
+
+@media (min-width: @post-desktop-width) {
+  .input {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .input__label {
+    width: 27%;
+    max-width: 120px;
+  }
+
+  .input__control {
+    padding-top: 1.9%;
+    padding-bottom: 1.9%;
   }
 }

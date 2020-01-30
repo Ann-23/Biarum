@@ -24,11 +24,11 @@
         <div class="header__menu-wrap">
           <ul class="header__menu">
             <li class="header__item"><a class="header__link" href="#">Lorem 1</a></li>
-            <li class="header__item"><a class="header__link" href="#">lorem 2</a></li>
+            <li class="header__item"><a class="header__link" href="#">Lorem 2</a></li>
             <li class="header__item"><a class="header__link" href="#">Lorem 3</a></li>
             <li class="header__item"><a class="header__link" href="#">Lorem 4</a></li>
           </ul>
-          <button class="header__button button">Lorem ipsum</button>
+          <button class="header__button button button--header">Lorem ipsum</button>
         </div>
       </div>
     </nav>
@@ -49,7 +49,8 @@
         </div>
         <div class="slider__slide">
           <picture>
-            <source media="(min-width: 751px)" srcset="img/top-slide1@desktop.png">
+            <source media="(min-width: 960px)" srcset="img/top-slide1@desktop.png">
+            <source media="(min-width: 660px)" srcset="img/bg-top@tablet.png">
             <img src="img/bg-top@mobile.png" alt="slide">
           </picture>
         </div>
@@ -66,7 +67,7 @@
     <section class="testimonials">
       <h2 class="testimonials__title">Lorem <span class="testimonials__title-item">2</span></h2>
       <div class="testimonials__wrapper">
-        <div class="testimonials__item" style="display: none;">
+        <div class="testimonials__item">
           <blockquote class="testimonials__quote">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
           </blockquote>
@@ -79,7 +80,7 @@
           </blockquote>
           <p class="testimonials__author">Teacher 2<br>Pro Member</p>
         </div>
-        <div class="testimonials__item" style="display: none;">
+        <div class="testimonials__item">
           <blockquote class="testimonials__quote">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ”
@@ -88,17 +89,17 @@
         </div>
         <button class="testimonials__arrow testimonials__arrow--left" type="button">
           <span class="visually-hidden">Кнопка пролистывания влево</span>
-          <span class="testimonials__icon">
-            <svg class="testimonials__arrow-left" width="47" height="88">
-              <use xlink:href="#sprite-arrow-left"></use>
+          <span class="testimonials__icon-wrapper">
+            <svg class="testimonials__icon testimonials__icon--left" width="25" height="34">
+              <use xlink:href="#sprite-arrow"></use>
             </svg>
           </span>
         </button>
         <button class="testimonials__arrow testimonials__arrow--right" type="button">
           <span class="visually-hidden">Кнопка пролистывания вправо</span>
-          <span class="testimonials__icon">
-            <svg class="testimonials__arrow-right" width="47" height="88">
-              <use xlink:href="#sprite-arrow-right"></use>
+          <span class="testimonials__icon-wrapper">
+            <svg class="testimonials__icon testimonials__icon--right" width="25" height="34">
+              <use xlink:href="#sprite-arrow"></use>
             </svg>
           </span>
         </button>
@@ -115,30 +116,32 @@
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
         fugiat nulla pariatur.</p>
       <p class="info__text info__text--other">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore .</p>
+        tempor&nbsp;incididunt ut labore et dolore .</p>
       <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</p>
       <button class="info__button button">Lorem Ipsum</button>
     </section>
     <section class="order">
       <h2 class="order__title">Lorem <span class="order__title-item">4</span></h2>
-      <p class="order__text">Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing elit, sed do
-        eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua.</p>
-      <form class="order__form" action="#" method="post">
-        <label class="input">
-          <span class="input__label">First name</span>
-          <input class="input__control" type="text" name="firstname" placeholder="First name">
-        </label>
-        <label class="input">
-          <span class="input__label">Last name</span>
-          <input class="input__control" type="text" name="lastname" placeholder="Last name">
-        </label>
-        <label class="input">
-          <span class="input__label">Email</span>
-          <input class="input__control" type="email" name="email" placeholder="Email">
-        </label>
-        <button class="order__button button" type="submit">Lorem Ipsum</button>
-      </form>
+      <div class="order__form-wrapper">
+        <p class="order__text">Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing elit, sed<br class="order__br">do
+          eiusmod&nbsp;tempor incididunt ut labore et dolore magna aliqua.</p>
+        <form class="order__form" action="#" method="post">
+          <label class="input">
+            <span class="input__label">First name</span>
+            <input class="input__control" type="text" name="firstname" placeholder="First name">
+          </label>
+          <label class="input">
+            <span class="input__label">Last name</span>
+            <input class="input__control" type="text" name="lastname" placeholder="Last name">
+          </label>
+          <label class="input">
+            <span class="input__label">Email</span>
+            <input class="input__control input__control--email" type="email" name="email" placeholder="Email">
+          </label>
+          <button class="order__button button button--form" type="submit">Lorem Ipsum</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
