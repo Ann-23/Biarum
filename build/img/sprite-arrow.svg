@@ -1,2 +1,1 @@
-<svg style="display: block" viewBox="0 0 18.6 34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<polyline fill="none" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="2" points="1,1 17,17 1,33"></polyline> </svg>
+<svg viewBox="0 0 18.6 34" xmlns="http://www.w3.org/2000/svg" display="block"><path fill="none" d="M1 1l16 16L1 33"/></svg>

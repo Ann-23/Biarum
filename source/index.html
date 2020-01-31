@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="utf-8">
   <title>Main</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/MyriadPro.woff2" as="font">
+  <link rel="preload" href="fonts/TradeGothicLT-BoldCondTwenty.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,13 +15,13 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header header--closed header--nojs">
+  <header class="header header--closed">
     <nav class="header__nav">
       <div class="header__nav-wrapper">
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
-        <button class="header__burger">
+        <button class="header__toggle">
           <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
         </button>
         <div class="header__menu-wrap">
@@ -38,24 +41,39 @@
       <div class="slider__intro">
         <h1 class="slider__title">Lorem<br><span class="slider__title-item">1?</span></h1>
         <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt</p>
+          <span class="slider__text-item">incididunt</span></p>
         <p class="slider__remark">Lorem ipsum dolor sit amet, <span class="slider__remark-item">consectetur adipiscing elit</span></p>
       </div>
       <div class="slider__wrapper">
         <div class="slider__slide" style="display: none;">
           <picture>
-            <img src="img/bg-top@mobile.png" alt="slide">
-          </picture>
-        </div>
-        <div class="slider__slide">
-          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/top-slide1@desktop.webp">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-top@tablet.webp">
+            <source type="image/webp" srcset="img/bg-top@mobile.webp">
             <source media="(min-width: 960px)" srcset="img/top-slide1@desktop.png">
             <source media="(min-width: 660px)" srcset="img/bg-top@tablet.png">
             <img src="img/bg-top@mobile.png" alt="slide">
           </picture>
         </div>
+        <div class="slider__slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/top-slide2@desktop.webp">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-top@tablet.webp">
+            <source type="image/webp" srcset="img/bg-top@mobile.webp">
+            <source media="(min-width: 960px)" srcset="img/top-slide2@desktop.png">
+            <source media="(min-width: 660px)" srcset="img/bg-top@tablet.png">
+            <img src="img/bg-top@mobile.png" alt="slide">
+          </picture>
+        </div>
         <div class="slider__slide" style="display: none;">
-          <img src="img/bg-top@mobile.png" alt="slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/top-slide3@desktop.webp">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-top@tablet.webp">
+            <source type="image/webp" srcset="img/bg-top@mobile.webp">
+            <source media="(min-width: 960px)" srcset="img/top-slide3@desktop.png">
+            <source media="(min-width: 660px)" srcset="img/bg-top@tablet.png">
+            <img src="img/bg-top@mobile.png" alt="slide">
+          </picture>
         </div>
         <div class="slider__toggles controls">
           <button class="controls__toggle" type="button"><span class="visually-hidden">Слайдер 1</span></button>
@@ -67,7 +85,7 @@
     <section class="testimonials">
       <h2 class="testimonials__title">Lorem <span class="testimonials__title-item">2</span></h2>
       <div class="testimonials__wrapper">
-        <div class="testimonials__item">
+        <div class="testimonials__item" style="display: none;">
           <blockquote class="testimonials__quote">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
           </blockquote>
@@ -80,7 +98,7 @@
           </blockquote>
           <p class="testimonials__author">Teacher 2<br>Pro Member</p>
         </div>
-        <div class="testimonials__item">
+        <div class="testimonials__item" style="display: none;">
           <blockquote class="testimonials__quote">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. ”
@@ -119,7 +137,7 @@
         tempor&nbsp;incididunt ut labore et dolore .</p>
       <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button class="info__button button">Lorem Ipsum</button>
+      <button class="info__button button button--info">Lorem Ipsum</button>
     </section>
     <section class="order">
       <h2 class="order__title">Lorem <span class="order__title-item">4</span></h2>
@@ -146,6 +164,7 @@
   </main>
   <footer class="footer">
   </footer>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

@@ -2,11 +2,12 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  background-color: @black;
 }
 
 .slider__intro {
   position: absolute;
-  top: 14.5%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%);
   width: 81.33%;
@@ -15,22 +16,29 @@
 
 .slider__title {
   margin: 0;
+  padding-bottom: 9%;
+  padding-right: 3.5%;
   font-family: "TradeGothic", "Arial", sans-serif;
   font-size: 3.25em;
   font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.02em;
   color: @white;
   text-align: center;
   text-transform: uppercase;
 }
 
 .slider__title-item {
+  padding-left: 2.5%;
   color: @green;
 }
 
 .slider__text {
   margin: 0;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
   font-size: 1.25em;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
   color: @white;
   text-align: center;
 }
@@ -41,6 +49,8 @@
   padding-right: 7%;
   font-family: "TradeGothic", "Arial", sans-serif;
   font-size: 1.25em;
+  line-height: 1.25em;
+  letter-spacing: 0.085em;
   color: @white;
   text-align: center;
   text-transform: uppercase;
@@ -52,9 +62,9 @@
 
 .slider__toggles {
   position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translate(-50%);
+  bottom: 2%;
+  left: 48%;
+  transform: translate(-48%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,7 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .slider {
-    max-width: 1600px;
+    max-width: 2000px;
   }
 
   .slider__title {
@@ -77,34 +87,79 @@
   .slider__remark {
     font-size: 2em;
   }
+
+  .slider__intro {
+    top: 20.5%;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .slider__title {
+    padding-bottom: 2%;
+    padding-right: 0;
     font-size: 5.125em;
+    line-height: 0.9em;
+  }
+
+  .slider__title-item {
+    padding-left: 0;
   }
 
   .slider__text {
-    padding-bottom: 1%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 1.56em;
+  }
+
+  .slider__text-item {
+    display: none;
   }
 
   .slider__remark {
     font-size: 1.125em;
+    letter-spacing: 0.03em;
   }
 
   .slider__intro {
-    top: 4.5%;
+    top: 9.5%;
+  }
+
+  .slider__toggles {
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: 1150px) {
+  .slider__text {
+    padding-bottom: 4%;
+  }
+
+  .slider__intro {
+    top: 15.5%;
   }
 }
 
 @media (min-width: @post-desktop-width) {
   .slider__intro {
-    top: 12.5%;
+    top: 10%;
   }
 
   .slider__text {
-    padding-bottom: 5%;
+    padding-bottom: 12%;
   }
+}
 
+@media (min-width: 1400px) {
+  .slider__intro {
+    top: 21%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .slider__intro {
+    top: 29%;
+  }
 }

@@ -1,16 +1,24 @@
 .testimonials {
   position: relative;
-  padding-top: 6%;
-  padding-bottom: 16.7%;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-top: 21%;
+  padding-bottom: 17.5%;
+  padding-left: 6.2%;
+  padding-right: 4.6%;
+  background-image: url("../img/bg-testimonials@mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: 100%;
 }
 
 .testimonials__title {
   margin: 0;
+  padding-left: 28%;
+  padding-right: 30%;
   font-family: "TradeGothic", "Arial", sans-serif;
   font-size: 3.25em;
   font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.01em;
   color: @gray-f;
   text-align: center;
   text-transform: uppercase;
@@ -21,12 +29,19 @@
 }
 
 .testimonials__wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
 .testimonials__quote {
+  margin: 0;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 7%;
   font-size: 1.375em;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
   color: @gray-d;
   text-align: center;
 }
@@ -36,8 +51,12 @@
 }
 
 .testimonials__author {
-  padding-bottom: 18.67%;
+  margin: 0;
+  padding-bottom: 20.5%;
+  padding-right: 2%;
   font-size: 1.5em;
+  line-height: 1em;
+  letter-spacing: 0.03em;
   color: @blue;
   text-align: center;
 }
@@ -45,20 +64,19 @@
 .testimonials__arrow {
   padding: 0;
   position: absolute;
-  top: 26%;
+  top: 20%;
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
 .testimonials__arrow--left {
-  left: 5%;
-  transform: translate(-5%) rotate(180deg);
+  left: 1%;
+  transform: rotate(180deg);
 }
 
 .testimonials__arrow--right {
   right: 1%;
-  transform: translate(-1%);
 }
 
 .testimonials__icon {
@@ -71,17 +89,44 @@
 
 .testimonials__item {
   padding-top: 90%;
-  background-image: url("../img/slide.png"), url("../img/bg-testimonials@mobile.png");
+  width: 100%;
+}
+
+.testimonials__item:nth-of-type(1) {
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 50% 7%, 50% -5%;
-  background-size: 65%, 100%;
+  background-position: 50% 7%;
+  background-size: 65%;
+}
+
+.testimonials__item:nth-of-type(2) {
+  background-image: url("../img/slide.png");
+  background-repeat: no-repeat;
+  background-position: 50% 7%;
+  background-size: 65%;
+}
+
+.testimonials__item:nth-of-type(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 50% 7%;
+  background-size: 65%;
 }
 
 @media (min-width: @tablet-width) {
   .testimonials {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 2000px;
+    background-image: url("../img/bg-testimonials@tablet.png");
+    background-repeat: no-repeat;
+    background-position: center 30.5%;
+    background-size: 100%;
+  }
+
+  .testimonials__wrapper {
+    margin: 0 auto;
+    max-width: 960px;
   }
 
   .testimonials__title {
@@ -97,17 +142,16 @@
   }
 
   .testimonials__arrow {
-    top: 30%;
+    top: 25.5%;
   }
 
   .testimonials__arrow--left {
-    left: 8%;
-    transform: translate(-8%) rotate(180deg);
+    left: -0.5%;
+    transform: rotate(180deg);
   }
 
   .testimonials__arrow--right {
-    right: 8%;
-    transform: translate(-8%);
+    right: 2%;
   }
 
   .testimonials__icon {
@@ -116,18 +160,18 @@
   }
 
   .testimonials__item {
-    padding-top: 103%;
-    background-image: url("../img/slide.png"), url("../img/bg-testimonials@tablet.png");
+    padding-top: 110.7%;
+    background-image: url("../img/slide.png");
     background-repeat: no-repeat;
-    background-position: 50% 13%, center top;
-    background-size: 461px 542px, 100%;
+    background-position: 45% 13%;
+    background-size: 461px 542px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .testimonials {
-    padding-top: 5.3%;
-    padding-bottom: 5%;
+    padding-top: 4.8%;
+    padding-bottom: 4.2%;
     padding-left: 5.3%;
     padding-right: 5.3%;
     background-image: url("../img/spekles.png");
@@ -136,11 +180,27 @@
   }
 
   .testimonials__title {
+    padding-left: 30%;
     font-size: 3.25em;
   }
 
   .testimonials__quote {
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: 1.125em;
+    line-height: 1.5em;
+  }
+
+  .testimonials__item:nth-of-type(1) .testimonials__quote {
+    padding-bottom: 7%;
+    padding-left: 13%;
+    padding-right: 1%;
+  }
+
+  .testimonials__item:nth-of-type(3) .testimonials__quote {
+    padding-left: 5%;
+    padding-right: 11%;
   }
 
   .testimonials__quote-item {
@@ -149,7 +209,17 @@
 
   .testimonials__author {
     padding-bottom: 8%;
+    padding-right: 0;
     font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  .testimonials__item:nth-of-type(1) .testimonials__author {
+    padding-left: 13%;
+  }
+
+  .testimonials__item:nth-of-type(3) .testimonials__author {
+    padding-right: 6%;
   }
 
   .testimonials__wrapper {
@@ -157,26 +227,28 @@
   }
 
   .testimonials__item {
-    padding-top: 35%;
+    padding-top: 35.5%;
     width: 33.33%;
   }
 
   .testimonials__item:nth-of-type(1) {
+    display: block !important;
     background-image: url("../img/slide1.png"), url("../img/bg-testimonials@tablet.png");
-    background-position: 50% 10%, center 10%;
-    background-size: 80%, 100%;
+    background-position: 73% 15%, 50% 10%;
+    background-size: 74%, 100%;
   }
 
   .testimonials__item:nth-of-type(2) {
     background-image: url("../img/slide2.png");
-    background-position: 50% 10%;
-    background-size: 80%;
+    background-position: 50% 15%;
+    background-size: 74%;
   }
 
   .testimonials__item:nth-of-type(3) {
+    display: block !important;
     background-image: url("../img/slide3.png");
-    background-position: 50% 10%;
-    background-size: 80%;
+    background-position: 36% 15%;
+    background-size: 74%;
   }
 
   .testimonials__icon {
@@ -184,13 +256,20 @@
     height: 46px;
   }
 
+  .testimonials__arrow {
+    top: 26%;
+  }
+
   .testimonials__arrow--left {
-    left: 2%;
-    transform: translate(-2%) rotate(180deg);
+    left: 1%;
+    transform: rotate(180deg);
   }
 
   .testimonials__arrow--right {
-    right: 2%;
-    transform: translate(-2%);
+    right: 1%;
+  }
+
+  .testimonials__button {
+    margin-top: 2%;
   }
 }
