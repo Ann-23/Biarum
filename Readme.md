@@ -1,2 +1,2 @@
 # Тестовое задание Biarum
-# Собрать и запустить npm build / npm start
+# Собрать и запустить npm i / npm start
